@@ -32,8 +32,11 @@
         case 'htmx:beforeSwap':
           let tempName = path.slice(9)
           let template = document.querySelector(`template:is(#${tempName}, [name="${tempName}"], [data-name="${tempName}"])`)
-          evt.detail.serverResponse = template.innerHTML
-          evt.detail.shouldSwap = true
+          if(!template) htmxApi.logError(`Requested template '${tempName}' does not exist`)
+          else {
+            evt.detail.shouldSwap = !!template
+            evt.detail.serverResponse = template?.innerHTML
+          }
           return true
       }
     }

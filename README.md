@@ -14,7 +14,7 @@ This allows for keeping simple changes that don't require server-side processing
 ## Installation
 ```html
 <!-- From jsDelivr -->
-<script src="https://cdn.jsdelivr.net/gh/katrinakitten/htmx-template@1.0/htmx-template.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/katrinakitten/htmx-template@1.0.1/htmx-template.min.js"></script>
 
 <!-- Or a local file -->
 <script src="./htmx-template.min.js"></script>

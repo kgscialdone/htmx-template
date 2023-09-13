@@ -1,6 +1,6 @@
 # HTMX Template Extension
  
-Enables HTMX to retrieve the contents of <template> elements rather than make an HTTP request.
+Enables HTMX to retrieve the contents of `<template>` elements rather than make an HTTP request.
 
 ```html
 <p hx-get="template:lorem" hx-trigger="load delay:3s">Loading...</p>

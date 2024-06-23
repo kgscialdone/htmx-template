@@ -26,8 +26,3 @@ Once the script is included, you'll need to use the `hx-ext` attribute to enable
   <!-- Your content here -->
 </body>
 ```
-
-## Gotchas
-Note that in order to respect HTMX swapping rules, the template's `innerHTML` is used, rather than "properly" making a copy of its content nodes. This means, among other things, that `<slot>` elements will not work - this is not a web component, but rather a "faked" HTTP response body that is handled by HTMX in the same way as any other request.
-
-In future versions, this behavior may be changed to allow `<slot>` elements to reference the request parameters (currently, the requested template does not have access to them).
